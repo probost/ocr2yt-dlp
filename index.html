@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ocr2mp3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="title">Ocr2mp3</h1>
+  <div id="langToggle" title="Switch language">🇬🇧</div>
+  <p id="description">Queries YouTube for OCR output(s) and downloads as MP3(s)</p>
+  <input type="file" id="imageInput" accept="image/*"><br><br>
+
+  <label id="outputLabel">OCR Output or YT queries</label><br>
+  <textarea id="output" rows="10" cols="50" placeholder="OCR results to query on YT"></textarea><br><br>
+
+  <label id="logLabel">yt-dlp Output:</label><br>
+  <textarea id="log" rows="15" cols="80" readonly placeholder="yt-dlp logs..."></textarea><br><br>
+
+  <button id="downloadBtn">Download MP3s</button>
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4.0.2/dist/tesseract.min.js"></script>
+  <script src="script.js"></script>
+  <script src="translate.js"></script>
+</body>
+</html>
