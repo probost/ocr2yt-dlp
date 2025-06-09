@@ -19,6 +19,7 @@ This project is a simple full-stack app that allows users to search for a YouTub
 
 
 💿 Requirements
+
     apt packages: nodejs, yt-dlp, ffmpeg
     
     NPM packages: express, yt-dlp-exec, yt-search
