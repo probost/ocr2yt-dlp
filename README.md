@@ -1,6 +1,7 @@
 🎵 YouTube to MP3 Converter
 
-This project is a simple full-stack app that allows users to search for a YouTube video, convert it to MP3 using yt-dlp, and download the audio file through a user-friendly interface. Test project.
+This project is a simple full-stack app that allows users to query YT for a video, convert it to MP3 using yt-dlp, and download the audio file through a user-friendly interface.
+Queries can be parsed from a playlist screenshot.
 
 
    Features
