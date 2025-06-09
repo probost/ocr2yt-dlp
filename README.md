@@ -1,9 +1,9 @@
 🎵 YouTube to MP3 Converter
 
-This project is a simple full-stack app that allows users to search for a YouTube video, convert it to MP3 using yt-dlp, and download the audio file through a user-friendly interface.
+This project is a simple full-stack app that allows users to search for a YouTube video, convert it to MP3 using yt-dlp, and download the audio file through a user-friendly interface. Test project.
 
-Made mainly for myself to host at home to educate myself on how this works.
-🧩 Features
+
+   Features
 
 ⚙️ Backend (server.js)
 
@@ -23,16 +23,16 @@ Made mainly for myself to host at home to educate myself on how this works.
     
     NPM packages: express, yt-dlp-exec, yt-search
 
-Install with:
+Installation:
 
-apt install nodejs yt-dlp ffmpeg
+    apt install nodejs yt-dlp ffmpeg
 
-npm update
+    npm update
 
-npm install express yt-dlp-exec yt-search
+    npm install express yt-dlp-exec yt-search
 
 Run the App:
 
-node server.js
+    node server.js
 
-Then open http://localhost:3000 in your browser.
+    Then open http://localhost:3000 in your browser.
