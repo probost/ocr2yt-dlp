@@ -4,10 +4,10 @@ const ytsr = require('yt-search');
 const fs = require('fs');
 const path = require('path');
 const app = express();
+var filepath = '';
 
 app.use(express.json());
 app.use(express.static('.'));
-
 // /download is the route that frontend has to fetch
 app.post('/download', async (req, res) => {
   const query = req.body.query;
@@ -17,7 +17,7 @@ app.post('/download', async (req, res) => {
     const video = searchResult.videos[0];
     if (!video) return res.status(404).send('No video found');
     // 2. Set up file path for temporary MP3 file
-    const filepath = path.join(__dirname, `tmp-${Date.now()}.mp3`);
+    filepath = path.join(__dirname, `tmp-${Date.now()}.mp3`);
     // 3. Download and extract audio
     const result = await youtubedl(video.url, {
       output: filepath,

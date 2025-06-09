@@ -13,6 +13,7 @@ imageInput.addEventListener('change', async () => {
 
 downloadBtn.addEventListener('click', async () => {
     const lines = output.value.split('\n').filter(Boolean);
+
     for (const line of lines) {
         log.value += `\n[${line}] Searching and downloading...\n`;
         log.scrollTop = log.scrollHeight;
@@ -30,6 +31,8 @@ downloadBtn.addEventListener('click', async () => {
             a.download = `${line}.mp3`;
             a.click();
             window.URL.revokeObjectURL(url);
+            log.value += `\n[${line}] Response OK \n`;
+            log.scrollTop = log.scrollHeight;
 
         } else {
             const errorText = await response.text();
