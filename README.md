@@ -26,7 +26,9 @@ Made mainly for myself to host at home to educate myself on how this works.
 Install with:
 
 apt install nodejs yt-dlp ffmpeg
+
 npm update
+
 npm install express yt-dlp-exec yt-search
 
 Run the App:
