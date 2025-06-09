@@ -19,18 +19,16 @@ Made mainly for myself to host at home to educate myself on how this works.
 
 
 💿 Requirements
-
-    Node.js
-
-    yt-dlp (should be installed and accessible in your system's PATH)
-
+    apt packages: nodejs, yt-dlp, ffmpeg
+    
     NPM packages: express, yt-dlp-exec, yt-search
 
 Install with:
+apt install nodejs yt-dlp ffmpeg
 
 npm install express yt-dlp-exec yt-search
 
-🚀 Run the App
+Run the App:
 
 node server.js
 
